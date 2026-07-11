@@ -1,0 +1,29 @@
+services:
+  askback:
+    build: .
+    container_name: askback
+    restart: unless-stopped
+    ports:
+      - "5362:5362"
+    environment:
+      - PORT=5362
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+      - DB_PATH=/app/data/askback.db
+      - BASE_URL=${BASE_URL:-}
+      - BUSINESS_NAME=${BUSINESS_NAME:-}
+      - GOOGLE_REVIEW_URL=${GOOGLE_REVIEW_URL:-}
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID:-}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN:-}
+      - TWILIO_FROM=${TWILIO_FROM:-}
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_FROM=${SMTP_FROM:-}
+      - DRY_RUN=${DRY_RUN:-}
+      - FOLLOWUP_DAYS=${FOLLOWUP_DAYS:-3}
+    volumes:
+      - askback-data:/app/data
+
+volumes:
+  askback-data:
