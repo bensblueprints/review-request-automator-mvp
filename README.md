@@ -62,7 +62,7 @@ For SMS opt-outs, point your Twilio number's inbound webhook at `POST {BASE_URL}
 
 ## ☕ Skip the setup — get the 1-click installer
 
-Want the packaged Windows installer with everything wired up? Grab it on Whop: **https://whop.com/onetime-suite**
+Want the packaged Windows installer with everything wired up? Grab it on Whop: **https://whop.com/benjisaiempire/askback-app
 
 ## Tech stack
 
