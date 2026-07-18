@@ -2,7 +2,11 @@
 
 ## Demo
 
-VIDEO-PLACEHOLDER
+
+
+https://github.com/user-attachments/assets/dc00790a-0aa0-43d4-a67f-9a7f49663801
+
+
 
 **Get more Google reviews on autopilot. Pay once — not $289/mo.**
 
